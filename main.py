@@ -20,7 +20,7 @@ class PDF(FPDF):
 
     def put_logo(self):
         self.set_xy(10.0,20.0)
-        self.image("D:\\Documents\\RT Docs\\Clients\\RCBC CLG\\SOA Reports\\RCBC_LOGO.JPG",link="",type="",w=70,h=30)
+        self.image("RCBC_LOGO.JPG",link="",type="",w=70,h=30)
 
     def put_title(self):
         self.set_xy(0.0,0.0)
@@ -244,5 +244,5 @@ pdf.put_title()
 pdf.put_header()
 pdf.put_details()
 pdf.put_footer()
-pdf.output('test.pdf','F')
+pdf.output('test2.pdf','F')
 
